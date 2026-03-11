@@ -12,7 +12,7 @@ body{
     justify-content:space-between;
     align-items:center;
     padding:20px 10%;
-    background:#daa1a1;
+    background:#9493a3;
     
 }
 
@@ -31,4 +31,78 @@ body{
 .nav-links a{
     color:white;
     text-decoration:none;
+}
+
+/* HERO SECTION */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    padding:80px 10%;
+}
+.hero-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    width:100%;
+}
+.hero-text{
+    max-width:500px;
+}
+.hero-greeting{
+    font-size:28px;
+}
+.hero-name{
+    font-size:48px;
+    margin:10px 0;
+}
+.highlight{
+    color:#4f46e5;
+}
+.hero-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    padding:12px 20px;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+    position:relative;
+    overflow:hidden;
+}
+
+.primary-btn{
+     background: linear-gradient(to top, #0E2C46 50%, #FF8514 50%);
+     background-size:100% 200%;
+    background-position:top;
+    color:white;
+    
+    transition: background-position 0.4s ease;
+}
+.primary-btn:hover{
+    background-position:bottom;
+}
+
+.secondary-btn{
+    border:2px solid #4f46e5;
+    background: linear-gradient(to top, #0E2C46 50%, transparent 50%);
+    background-size:100% 200%;
+    background-position:top;
+    color:#4f46e5;
+    transition: background-position 0.4s ease, color 0.4s ease;
+}
+
+.secondary-btn:hover{
+    background-position:bottom;
+    color:white;
+    border-color:#0E2C46;
+}
+
+.hero-image img{
+    width:350px;
+    border-radius:10px;
 }
