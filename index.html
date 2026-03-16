@@ -1,451 +1,329 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eleni Tadese - Portfolio</title>
-    <!-- Font Awesome Icons (free) -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- HEADER -->
-      <header class="header">
-        <div class="container header-container">
-          <a href="#home" class="logo">
-            <span class="logo-first">Eleni</span>
-            <span class="logo-last">Tadese</span>
-          </a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eleni Tadese – Portfolio</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#home" class="logo">
+        <span class="logo-first">Eleni</span>
+        <span class="logo-last">Tadese</span>
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="cta-btn">Get In Touch</a>
+    </div>
+  </header>
 
-          <!-- Desktop Navigation -->
-          <nav class="nav">
-            <ul class="nav-list">
-              <li><a href="#home" class="nav-link active">Home</a></li>
-              <li><a href="#about" class="nav-link">About</a></li>
-              <li><a href="#skills" class="nav-link">Skills</a></li>
-              <li><a href="#projects" class="nav-link">Projects</a></li>
-              <li><a href="#process" class="nav-link">Process</a></li>
-              <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-          </nav>
-
-          <!-- CTA Button -->
-          <a href="#contact" class="cta-btn">Get In Touch</a>
+  <main>
+    <!-- HERO SECTION with CV button -->
+    <section id="home" class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-greeting">Hello, I'm</h1>
+          <h2 class="hero-name"><span class="highlight">Eleni Tadese</span></h2>
+          <p class="hero-title">Junior MERN Stack Developer</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <a href="https://drive.google.com/file/d/1FREjOaLxvFpL5RV2l591_4UTXYdITTmq/view?usp=sharing" target="_blank" class="btn btn-outline">View CV</a>
+          </div>
         </div>
-      </header>
-      <main>
-        <!-- HERO SECTION -->
-        <section id="home" class="hero section">
-          <div class="container hero-container">
-            <div class="hero-content">
-              <h1 class="hero-greeting">Hello, I'm</h1>
-              <h2 class="hero-name">
-                <span class="highlight">Eleni Tadese</span>
-              </h2>
-              <p class="hero-title">Junior MERN Stack Developer</p>
-              <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
-              </div>
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <img src="./images/myp.jpg" alt="Eleni Tadese">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (unchanged) -->
+    <section id="about" class="about">
+      <div class="container about-container">
+        <!-- LEFT COLUMN: STATS CARDS (two cards with icon hover effect) -->
+        <div class="about-left">
+          <h3 class="experience-title">Quick Stats</h3>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+              <h4>Projects Completed</h4>
+              <p class="stat-number">4+</p>
+              <p class="stat-description">From GPA calculator to full-stack apps</p>
             </div>
-            <div class="hero-image">
-              <div class="image-wrapper">
-                <img src="./images/myp.jpg" alt="Eleni Tadese" />
-                <div class="image-accent"></div>
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-code"></i></div>
+              <h4>Full‑Stack Expertise</h4>
+              <p class="stat-description">MERN, Python, C++, modern frontend tools</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: PROFILE / EXPERIENCE / EDUCATION with expandable "Read more" -->
+        <div class="about-right">
+          <span class="section-tag">ABOUT ME</span>
+          
+          <!-- PROFILE BLOCK -->
+          <div class="about-block">
+            <h3 class="block-title">PROFILE</h3>
+            <p>Motivated 4th-year Computer Science student at ASTU, passionate about solving real-world problems with code.</p>
+            <div class="expandable">
+              <input type="checkbox" id="profile-expand" class="expand-check">
+              <div class="expand-content">
+                <p>I'm Eleni Tadese, a 4th-year Computer Science and Engineering student at Adama Science and Technology University. I'm passionate about using technology to solve real-world problems and build meaningful digital experiences. Currently, I'm improving my skills in Python, HTML, CSS, and JavaScript while developing personal projects such as a GPA calculator platform and an initiative to empower students, especially young women, to explore the tech field.</p>
+              </div>
+              <label for="profile-expand" class="expand-btn"></label>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE BLOCK -->
+          <div class="about-block">
+            <h3 class="block-title">EXPERIENCE</h3>
+            <h4 class="block-subtitle">AI & Computer Vision Intern</h4>
+            <p class="block-meta">@ Ethronics Institute of Robotics</p>
+            <p>Developed Amharic OCR models, created datasets, and improved recognition accuracy.</p>
+            <div class="expandable">
+              <input type="checkbox" id="exp-expand" class="expand-check">
+              <div class="expand-content">
+                <p>Worked on developing a text-to-image recognition model for Amharic script. Contributed to the creation of an Amharic character dataset and trained both character-level and text-line OCR models. Focused on data generation, model training, and performance evaluation to improve the accuracy of Amharic text recognition systems.</p>
+              </div>
+              <label for="exp-expand" class="expand-btn"></label>
+            </div>
+          </div>
+
+          <!-- EDUCATION BLOCK -->
+          <div class="about-block">
+            <h3 class="block-title">EDUCATION</h3>
+            <h4 class="block-subtitle">Computer Science and Engineering</h4>
+            <p class="block-meta">Adama Science and Technology University</p>
+            <p>Coursework: DSA, AI, OOP, DBMS, Computer Networking.</p>
+            <div class="expandable">
+              <input type="checkbox" id="edu-expand" class="expand-check">
+              <div class="expand-content">
+                <p>Relevant Coursework: Data Structures & Algorithms, Artificial Intelligence, Object Oriented Programming (OOP), Database Management System, Computer Networking.</p>
+              </div>
+              <label for="edu-expand" class="expand-btn"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION (updated background and hover) -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <p class="section-subtitle">4th Year Computer Science & Engineering Undergraduate | Full-Stack Developer</p>
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-code"></i></div>
+            <div class="skill-content">
+              <h3>Frontend Development</h3>
+              <p>Building modern, responsive web applications</p>
+              <div class="tech-tags">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span>
               </div>
             </div>
           </div>
-        </section>
-
-        <!-- ABOUT SECTION -->
-        <section id="about" class="about section">
-          <div class="container about-container">
-            <div class="about-image-side">
-              <div class="profile-image-wrapper">
-                <img src="assets/images/profile.jpg" alt="Eleni Tadese" />
-              </div>
-              <div class="stats-card">
-                <span class="stat-number">4+</span>
-                <span class="stat-label">Projects Completed</span>
-              </div>
-              <div class="about-actions">
-                <a href="#projects" class="btn btn-primary">Discover My Work</a>
-                <a
-                  href="https://drive.google.com/uc?export=download&id=1g2n-90tFUzJIY0OZJysaKrw1lpsCpy9w"
-                  target="_blank"
-                  class="btn btn-outline"
-                  >Download CV</a
-                >
-              </div>
-            </div>
-            <div class="about-text-side">
-              <h2 class="section-title">About Me</h2>
-              <p class="about-greeting">
-                Hello! <span class="highlight">I'm Eleni Tadese.</span>
-              </p>
-              <div class="about-description">
-                <p>
-                  I'm a 4th-year Computer Science and Engineering student at
-                  Adama Science and Technology University. I'm passionate about
-                  using technology to solve real-world problems and build
-                  meaningful digital experiences.
-                </p>
-                <p>
-                  Currently, I'm improving my skills in Python, HTML, CSS, and
-                  JavaScript while developing personal projects such as a GPA
-                  calculator platform and an initiative to empower students,
-                  especially young women, to explore the tech field.
-                </p>
-                <p>
-                  I'm committed to delivering projects with a focus on quality,
-                  creativity, and impact — always aiming to stay on schedule and
-                  within scope. My goal is to grow into a full-stack developer
-                  and contribute to building innovative solutions that serve my
-                  community and beyond.
-                </p>
+          <!-- Backend -->
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-database"></i></div>
+            <div class="skill-content">
+              <h3>Backend Development</h3>
+              <p>Server-side development and APIs</p>
+              <div class="tech-tags">
+                <span>Node.js</span><span>Express</span><span>MySQL</span><span>REST APIs</span>
               </div>
             </div>
           </div>
-        </section>
-
-        <!-- SKILLS SECTION -->
-        <section id="skills" class="skills section">
-          <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <p class="section-subtitle">
-              4th Year Computer Science & Engineering Undergraduate | Full-Stack
-              Developer
-            </p>
-
-            <div class="skills-grid">
-              <!-- Frontend -->
-              <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-code"></i></div>
-                <h3>Frontend Development</h3>
-                <p>Building modern, responsive web applications</p>
-                <div class="tech-tags">
-                  <span>HTML5</span>
-                  <span>CSS3</span>
-                  <span>JavaScript</span>
-                  <span>React</span>
-                </div>
-              </div>
-
-              <!-- Backend -->
-              <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-database"></i></div>
-                <h3>Backend Development</h3>
-                <p>Server-side development and APIs</p>
-                <div class="tech-tags">
-                  <span>Node.js</span>
-                  <span>Express</span>
-                  <span>MySQL</span>
-                  <span>REST APIs</span>
-                </div>
-              </div>
-
-              <!-- Programming Languages -->
-              <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-terminal"></i></div>
-                <h3>Programming Languages</h3>
-                <p>Multiple programming languages</p>
-                <div class="tech-tags">
-                  <span>Python</span>
-                  <span>C++</span>
-                  <span>JavaScript</span>
-                  <span>Java</span>
-                </div>
-              </div>
-
-              <!-- Problem Solving -->
-              <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-brain"></i></div>
-                <h3>Problem Solving</h3>
-                <p>Algorithms, competitive programming & challenges</p>
-                <div class="tech-tags">
-                  <a
-                    href="https://leetcode.com/u/elenitadese/"
-                    target="_blank"
-                    class="tech-link"
-                    >LeetCode <i class="fas fa-external-link-alt"></i
-                  ></a>
-                  <a
-                    href="https://codeforces.com/profile/elenitadese"
-                    target="_blank"
-                    class="tech-link"
-                    >Codeforces <i class="fas fa-external-link-alt"></i
-                  ></a>
-                </div>
-              </div>
-
-              <!-- Version Control -->
-              <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
-                <h3>Version Control</h3>
-                <p>Managing projects with Git & GitHub</p>
-                <div class="tech-tags">
-                  <span>Git</span>
-                  <span>GitHub</span>
-                </div>
+          <!-- Programming Languages -->
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-terminal"></i></div>
+            <div class="skill-content">
+              <h3>Programming Languages</h3>
+              <p>Multiple programming languages</p>
+              <div class="tech-tags">
+                <span>Python</span><span>C++</span><span>JavaScript</span><span>Java</span>
               </div>
             </div>
           </div>
-        </section>
-
-        <!-- PROJECTS SECTION -->
-        <section id="projects" class="projects section">
-          <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-              <!-- Project 1 -->
-              <div class="project-card">
-                <div class="project-img">
-                  <img src="assets/images/project1.jpg" alt="GPA Calculator" />
-                </div>
-                <div class="project-info">
-                  <h3>GPA Calculator Platform</h3>
-                  <p>React, Node.js, CSS</p>
-                  <div class="project-links">
-                    <a href="#" class="btn btn-primary" target="_blank"
-                      >Live Demo</a
-                    >
-                    <a href="#" class="btn btn-outline" target="_blank">Code</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project 2 -->
-              <div class="project-card">
-                <div class="project-img">
-                  <img
-                    src="assets/images/project2.jpg"
-                    alt="Empowerment Initiative"
-                  />
-                </div>
-                <div class="project-info">
-                  <h3>Student Empowerment Initiative</h3>
-                  <p>HTML, CSS, JavaScript</p>
-                  <div class="project-links">
-                    <a href="#" class="btn btn-primary" target="_blank"
-                      >Live Demo</a
-                    >
-                    <a href="#" class="btn btn-outline" target="_blank">Code</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project 3 -->
-              <div class="project-card">
-                <div class="project-img">
-                  <img src="assets/images/project3.jpg" alt="Portfolio" />
-                </div>
-                <div class="project-info">
-                  <h3>Personal Portfolio</h3>
-                  <p>React, Vite, CSS Modules</p>
-                  <div class="project-links">
-                    <a href="#" class="btn btn-primary" target="_blank"
-                      >Live Demo</a
-                    >
-                    <a href="#" class="btn btn-outline" target="_blank">Code</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project 4 -->
-              <div class="project-card">
-                <div class="project-img">
-                  <img src="assets/images/project4.jpg" alt="Task Management" />
-                </div>
-                <div class="project-info">
-                  <h3>Task Management App</h3>
-                  <p>MERN Stack</p>
-                  <div class="project-links">
-                    <a href="#" class="btn btn-primary" target="_blank"
-                      >Live Demo</a
-                    >
-                    <a href="#" class="btn btn-outline" target="_blank">Code</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- GitHub CTA -->
-            <div class="github-cta">
-              <i class="fab fa-github github-icon"></i>
-              <h3>Want to see more projects?</h3>
-              <p>
-                Explore all my work, contributions, and coding journey on GitHub
-              </p>
-              <a
-                href="https://github.com/Elenitadese"
-                target="_blank"
-                class="btn btn-primary"
-                >Visit My GitHub →</a
-              >
-            </div>
-          </div>
-        </section>
-
-        <!-- PROCESS SECTION -->
-        <section id="process" class="process section">
-          <div class="container">
-            <h2 class="section-title">My Process</h2>
-            <p class="section-subtitle">
-              A structured approach to delivering high-quality solutions
-            </p>
-
-            <div class="process-grid">
-              <div class="process-card">
-                <div class="process-icon"><i class="fas fa-search"></i></div>
-                <h3>Research & Planning</h3>
-                <p>
-                  Understanding the problem, gathering requirements, and
-                  planning the best approach.
-                </p>
-              </div>
-              <div class="process-card">
-                <div class="process-icon">
-                  <i class="fas fa-paint-brush"></i>
-                </div>
-                <h3>Design & Prototyping</h3>
-                <p>
-                  Creating wireframes, mockups, and prototypes to visualize
-                  solutions.
-                </p>
-              </div>
-              <div class="process-card">
-                <div class="process-icon"><i class="fas fa-code"></i></div>
-                <h3>Development</h3>
-                <p>
-                  Building and testing the solution using modern technologies
-                  and best practices.
-                </p>
-              </div>
-              <div class="process-card">
-                <div class="process-icon"><i class="fas fa-bug"></i></div>
-                <h3>Testing & Quality</h3>
-                <p>
-                  Rigorous testing to ensure the solution works perfectly across
-                  all scenarios.
-                </p>
-              </div>
-              <div class="process-card">
-                <div class="process-icon"><i class="fas fa-rocket"></i></div>
-                <h3>Deployment</h3>
-                <p>
-                  Launching the project and ensuring everything runs smoothly in
-                  production.
-                </p>
-              </div>
-              <div class="process-card">
-                <div class="process-icon"><i class="fas fa-heart"></i></div>
-                <h3>Support & Maintenance</h3>
-                <p>
-                  Providing ongoing support and updates to keep the project
-                  running optimally.
-                </p>
+          <!-- Problem Solving -->
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-brain"></i></div>
+            <div class="skill-content">
+              <h3>Problem Solving</h3>
+              <p>Algorithms, competitive programming & challenges</p>
+              <div class="tech-tags">
+                <a href="https://leetcode.com/u/elenitadese/" target="_blank" class="tech-link">LeetCode <i class="fas fa-external-link-alt"></i></a>
+                <a href="https://codeforces.com/profile/elenitadese" target="_blank" class="tech-link">Codeforces <i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
           </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section id="contact" class="contact section">
-          <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-container">
-              <!-- Left: Info -->
-              <div class="contact-info">
-                <h3>Let's Connect</h3>
-                <p>
-                  I'm always interested in new opportunities and collaborations.
-                </p>
-                <div class="contact-details">
-                  <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                      <h4>Email</h4>
-                      <p>elenitade1221@gmail.com</p>
-                    </div>
-                  </div>
-                  <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                      <h4>Phone</h4>
-                      <p>+251 910 278 021</p>
-                    </div>
-                  </div>
-                  <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                      <h4>Location</h4>
-                      <p>Adama, Ethiopia</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Right: Form (mailto) -->
-              <form
-                class="contact-form"
-                action="mailto:elenitade1221@gmail.com"
-                method="POST"
-                enctype="text/plain"
-              >
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                />
-                <textarea
-                  name="message"
-                  rows="5"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
-                <button type="submit" class="btn btn-primary">
-                  Send Message
-                </button>
-              </form>
+          <!-- Version Control -->
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-code-branch"></i></div>
+            <div class="skill-content">
+              <h3>Version Control</h3>
+              <p>Managing projects with Git & GitHub</p>
+              <div class="tech-tags"><span>Git</span><span>GitHub</span></div>
             </div>
           </div>
-        </section>
-      </main>
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container footer-container">
-    <div class="footer-text">
-      <p>© 2025 Eleni Tadese. All rights reserved.</p>
-      <p class="tagline">Building the future, one line of code at a time</p>
+        </div>
+      </div>
+    </section>
+
+   <!-- PROJECTS SECTION – with buttons below image -->
+<section id="projects" class="projects">
+  <div class="container">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+
+      
+      <!-- Netflix Clone -->
+      <div class="project-card">
+        <div class="project-img">
+          <img src="./images/netflix.jpg" alt="Netflix Clone">
+        </div>
+        <div class="project-info">
+          <h3>Netflix Clone</h3>
+          <p class="project-tech">React, Firebase, TMDB API</p>
+          <div class="project-links">
+            <a href="https://n-project-2025-netflix.vercel.app/" target="_blank" class="btn-demo">Live Demo</a>
+            <a href="https://github.com/Eleni-tadese/N-Project-2025-netflix-.git" target="_blank" class="btn-code">Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Amazon Clone -->
+      <div class="project-card">
+        <div class="project-img">
+          <img src="./images/amazon.jpg" alt="Amazon Clone">
+        </div>
+        <div class="project-info">
+          <h3>Amazon Clone</h3>
+          <p class="project-tech">React, Node.js, Express, MySQL</p>
+          <div class="project-links">
+            <a href="https://my-amazon-clonee.netlify.app/" target="_blank" class="btn-demo">Live Demo</a>
+            <a href="https://github.com/Eleni-tadese/My-Amazon-Clone-Project.git" target="_blank" class="btn-code">Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Evangadi Forum -->
+      <div class="project-card">
+        <div class="project-img">
+          <img src="./images/evangadiforum.jpg" alt="Evangadi Forum">
+        </div>
+        <div class="project-info">
+          <h3>Evangadi Forum</h3>
+          <p class="project-tech">React, Express, MySQL</p>
+          <div class="project-links">
+            <a href="https://ffrontend.elenitade.com/" target="_blank" class="btn-demo">Live Demo</a>
+            <a href="https://github.com/Eleni-tadese/EvangadiForum_projectFull.git" target="_blank" class="btn-code">Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Apple Clone -->
+      <div class="project-card">
+        <div class="project-img">
+          <img src="./images/apple.jpg" alt="Apple Clone">
+        </div>
+        <div class="project-info">
+          <h3>Apple-clone-React</h3>
+          <p class="project-tech">Vite, React, Bootstrap</p>
+          <div class="project-links">
+            <a href="https://friendly-lily-212661.netlify.app/" target="_blank" class="btn-demo">Live Demo</a>
+            <a href="https://github.com/Eleni-tadese/Apple-React.git" target="_blank" class="btn-code">Code</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="social-links">
-      <a href="https://github.com/Elenitadese" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      <a href="mailto:elenitade1221@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/et0021/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+
+    <!-- GitHub CTA (username updated) -->
+    <div class="github-cta">
+      <a href="https://github.com/Eleni-tadese" target="_blank" class="github-cta-card">
+        <i class="fab fa-github github-icon"></i>
+        <div class="github-content">
+          <h3>Want to see more projects?</h3>
+          <p>Explore all my work, contributions, and coding journey on GitHub</p>
+          <span class="cta-label">Visit My GitHub →</span>
+        </div>
+      </a>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p>Made with ❤️ by Eleni Tadese</p>
-  </div>
-</footer>
-      <!-- Footer will go here -->
+</section>
+
+<!-- CONTACT SECTION – with social icons at bottom right -->
+<!-- CONTACT SECTION – with vertical social links -->
+<section id="contact" class="contact-footer">
+  <div class="container">
+    <h2 class="section-title" style="color: var(--accent);">Get In Touch</h2>
+    
+    <div class="contact-grid">
+      <!-- Left column: Contact Info -->
+      <div class="contact-info">
+        <h3>Let's Connect</h3>
+        <p>I'm always interested in new opportunities and collaborations.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>elenitade1221@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+251 910 278 021</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Adama, Ethiopia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column: Social Links (vertical with icons) -->
+      <div class="contact-social">
+        <h3>Follow Me</h3>
+        <div class="social-details">
+          <a href="https://github.com/Eleni-tadese" target="_blank" class="social-item">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="mailto:elenitade1221@gmail.com" class="social-item">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+          </a>
+          <a href="https://www.linkedin.com/in/et0021/" target="_blank" class="social-item">
+            <i class="fab fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+</section>
+</body>
 </html>
