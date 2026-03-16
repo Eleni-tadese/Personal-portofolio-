@@ -9,28 +9,40 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
  
   <header class="header">
-    <div class="container header-container">
-      <a href="#home" class="logo">
-        <span class="logo-first">Eleni</span>
-        <span class="logo-last">Tadese</span>
-      </a>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="#contact" class="cta-btn">Get In Touch</a>
-    </div>
-  </header>
+  <div class="container header-container">
+
+    <a href="#home" class="logo">
+      <span class="logo-first">Eleni</span>
+      <span class="logo-last">Tadese</span>
+    </a>
+
+    
+    <input type="checkbox" id="menu-toggle">
+
+    
+    <label for="menu-toggle" class="menu-icon">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contact" class="cta-btn">Get In Touch</a>
+
+  </div>
+</header>
 
 
   
@@ -48,7 +60,7 @@
         </div>
         <div class="hero-image">
           <div class="image-wrapper">
-            <img src="./images/myp.jpg" alt="Eleni Tadese">
+            <img src="images/myp.jpg" alt="Eleni Tadese">
           </div>
         </div>
       </div>
@@ -209,7 +221,7 @@
     
       <div class="project-card">
         <div class="project-img">
-          <img src="./images/amazon.jpg" alt="Amazon Clone">
+          <img src="images/amazon.jpg" alt="Amazon Clone">
         </div>
         <div class="project-info">
           <h3>Amazon Clone</h3>
@@ -223,7 +235,7 @@
      
       <div class="project-card">
         <div class="project-img">
-          <img src="./images/evangadiforum.jpg" alt="Evangadi Forum">
+          <img src="images/evangadiforum.jpg" alt="Evangadi Forum">
         </div>
         <div class="project-info">
           <h3>Evangadi Forum</h3>
@@ -237,7 +249,7 @@
       
       <div class="project-card">
         <div class="project-img">
-          <img src="./images/apple.jpg" alt="Apple Clone">
+          <img src="images/apple.jpg" alt="Apple Clone">
         </div>
         <div class="project-info">
           <h3>Apple-clone-React</h3>
@@ -307,10 +319,7 @@
       <i class="fab fa-github"></i>
       <span>GitHub</span>
     </a>
-    <a href="mailto:elenitade1221@gmail.com" class="social-item">
-      <i class="fas fa-envelope"></i>
-      <span>Email</span>
-    </a>
+ 
     <a href="https://www.linkedin.com/in/eleni-tadese-" target="_blank" class="social-item">
       <i class="fab fa-linkedin-in"></i>
       <span>LinkedIn</span>

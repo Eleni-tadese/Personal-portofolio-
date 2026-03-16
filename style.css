@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -56,12 +55,11 @@ ul {
   font-size: 1.1rem;
 }
 
-
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(38, 61, 125, 0.2); 
+  background-color: rgba(38, 61, 125, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -140,7 +138,7 @@ ul {
 }
 
 .hero {
-  padding-top: 10px;
+  padding-top: 120px;
   min-height: 70vh;
   display: flex;
   align-items: center;
@@ -250,14 +248,11 @@ ul {
   animation: float 4s ease-in-out infinite;
 }
 
-
-
 .image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 
 .about {
   background-color: var(--light-bg);
@@ -271,7 +266,6 @@ ul {
   align-items: start;
 }
 
-
 .about-left .experience-title {
   font-size: 1.8rem;
   color: var(--primary);
@@ -281,7 +275,7 @@ ul {
 }
 
 .about-left .experience-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -383,7 +377,7 @@ ul {
 }
 
 .block-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -417,7 +411,6 @@ ul {
   margin-bottom: 8px;
 }
 
-
 .expandable {
   margin-top: 8px;
 }
@@ -430,7 +423,9 @@ ul {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.3s ease;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease;
 }
 
 .expand-check:checked ~ .expand-content {
@@ -452,12 +447,12 @@ ul {
 }
 
 .expand-btn::after {
-  content: 'Read more';
+  content: "Read more";
   font-family: inherit;
 }
 
 .expand-check:checked ~ .expand-btn::after {
-  content: 'Read less';
+  content: "Read less";
 }
 
 .expand-btn:hover {
@@ -467,14 +462,13 @@ ul {
 .expand-btn::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
-  content: '\f078';
+  content: "\f078";
   transition: transform 0.3s;
 }
 
 .expand-check:checked ~ .expand-btn::before {
   transform: rotate(180deg);
 }
-
 
 .skills {
   background: linear-gradient(135deg, var(--primary) 0%, #1a2b5c 100%);
@@ -581,7 +575,6 @@ ul {
   font-size: 0.75rem;
 }
 
-
 .projects {
   background-color: var(--light-bg);
   padding: 80px 0;
@@ -605,24 +598,23 @@ ul {
 }
 
 .project-card:hover {
-
   box-shadow: var(--shadow-lg);
 }
 
 .project-img {
   width: 100%;
-  height: 200px; 
+  height: 200px;
   overflow: hidden;
 }
 
 .project-img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;  
-  background: #f5f5f5;   /* optional background */
+  object-fit: contain;
+  background: #f5f5f5; /* optional background */
 }
 
-oject-card:hover .project-img img {
+.project-card:hover .project-img img {
   transform: scale(1.05);
 }
 
@@ -662,18 +654,18 @@ oject-card:hover .project-img img {
 }
 
 .btn-demo {
-  background-color: #F8DB1B;
+  background-color: #f8db1b;
   color: white;
 }
 
 .btn-demo:hover {
-  background-color: #21356F;
+  background-color: #21356f;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(255, 71, 71, 0.3);
 }
 
 .btn-code {
-  background-color: #21356F;
+  background-color: #21356f;
   color: white;
 }
 
@@ -682,7 +674,6 @@ oject-card:hover .project-img img {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(38, 61, 125, 0.3);
 }
-
 
 .github-cta {
   max-width: 800px;
@@ -693,7 +684,7 @@ oject-card:hover .project-img img {
   display: flex;
   align-items: center;
   gap: 30px;
-  background-color: rgba(38,61,125,0.05);
+  background-color: rgba(38, 61, 125, 0.05);
   border: 2px solid var(--accent);
   border-radius: 20px;
   padding: 40px;
@@ -702,7 +693,7 @@ oject-card:hover .project-img img {
 }
 
 .github-cta-card:hover {
-  background-color: rgba(38,61,125,0.1);
+  background-color: rgba(38, 61, 125, 0.1);
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
 }
@@ -761,7 +752,6 @@ oject-card:hover .project-img img {
   margin: 0 auto;
 }
 
-
 .contact-info h3,
 .contact-social h3 {
   font-size: 1.8rem;
@@ -770,7 +760,7 @@ oject-card:hover .project-img img {
 }
 
 .contact-info p {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 30px;
 }
 
@@ -820,14 +810,13 @@ oject-card:hover .project-img img {
 
 .contact-item p {
   margin: 0;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.95rem;
 }
 
 .social-item span {
   color: white;
 }
-
 
 @media (max-width: 768px) {
   .contact-grid {
@@ -852,4 +841,161 @@ oject-card:hover .project-img img {
 .student-info p {
   margin: 0;
   letter-spacing: 0.3px;
+}
+
+@media (max-width: 992px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .header-container {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .nav-list {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .hero-name {
+    font-size: 2.5rem;
+  }
+
+  .hero-title {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .image-wrapper {
+    width: 260px;
+    height: 260px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .github-cta-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .hero-greeting {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .image-wrapper {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .cta-btn {
+    display: none;
+  }
+
+  .nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: rgba(38, 61, 125, 0.95);
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  #menu-toggle:checked ~ .nav {
+    max-height: 300px;
+  }
+  .header-container {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .menu-icon {
+    order: 3;
+  }
+
+  .nav {
+    width: 100%;
+  }
 }
