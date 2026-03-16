@@ -1,151 +1,451 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eleni Tadese Portfolio</title>
-<link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eleni Tadese - Portfolio</title>
+    <!-- Font Awesome Icons (free) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="container header-container">
+          <a href="#home" class="logo">
+            <span class="logo-first">Eleni</span>
+            <span class="logo-last">Tadese</span>
+          </a>
 
-<body>
+          <!-- Desktop Navigation -->
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a href="#home" class="nav-link active">Home</a></li>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#skills" class="nav-link">Skills</a></li>
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#process" class="nav-link">Process</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
 
-<!-- HEADER -->
-<header>
-<nav class="navbar">
+          <!-- CTA Button -->
+          <a href="#contact" class="cta-btn">Get In Touch</a>
+        </div>
+      </header>
+      <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero section">
+          <div class="container hero-container">
+            <div class="hero-content">
+              <h1 class="hero-greeting">Hello, I'm</h1>
+              <h2 class="hero-name">
+                <span class="highlight">Eleni Tadese</span>
+              </h2>
+              <p class="hero-title">Junior MERN Stack Developer</p>
+              <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+              </div>
+            </div>
+            <div class="hero-image">
+              <div class="image-wrapper">
+                <img src="./images/myp.jpg" alt="Eleni Tadese" />
+                <div class="image-accent"></div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-<h1 class="logo">Eleni Tadese</h1>
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about section">
+          <div class="container about-container">
+            <div class="about-image-side">
+              <div class="profile-image-wrapper">
+                <img src="assets/images/profile.jpg" alt="Eleni Tadese" />
+              </div>
+              <div class="stats-card">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="about-actions">
+                <a href="#projects" class="btn btn-primary">Discover My Work</a>
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1g2n-90tFUzJIY0OZJysaKrw1lpsCpy9w"
+                  target="_blank"
+                  class="btn btn-outline"
+                  >Download CV</a
+                >
+              </div>
+            </div>
+            <div class="about-text-side">
+              <h2 class="section-title">About Me</h2>
+              <p class="about-greeting">
+                Hello! <span class="highlight">I'm Eleni Tadese.</span>
+              </p>
+              <div class="about-description">
+                <p>
+                  I'm a 4th-year Computer Science and Engineering student at
+                  Adama Science and Technology University. I'm passionate about
+                  using technology to solve real-world problems and build
+                  meaningful digital experiences.
+                </p>
+                <p>
+                  Currently, I'm improving my skills in Python, HTML, CSS, and
+                  JavaScript while developing personal projects such as a GPA
+                  calculator platform and an initiative to empower students,
+                  especially young women, to explore the tech field.
+                </p>
+                <p>
+                  I'm committed to delivering projects with a focus on quality,
+                  creativity, and impact — always aiming to stay on schedule and
+                  within scope. My goal is to grow into a full-stack developer
+                  and contribute to building innovative solutions that serve my
+                  community and beyond.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-<ul class="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills section">
+          <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <p class="section-subtitle">
+              4th Year Computer Science & Engineering Undergraduate | Full-Stack
+              Developer
+            </p>
 
-</nav>
-</header>
+            <div class="skills-grid">
+              <!-- Frontend -->
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                <h3>Frontend Development</h3>
+                <p>Building modern, responsive web applications</p>
+                <div class="tech-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                  <span>React</span>
+                </div>
+              </div>
 
-<!-- HERO -->
-<section id="home" class="hero">
-<div class="container">
+              <!-- Backend -->
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <h3>Backend Development</h3>
+                <p>Server-side development and APIs</p>
+                <div class="tech-tags">
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>MySQL</span>
+                  <span>REST APIs</span>
+                </div>
+              </div>
 
-<div class="hero-container">
+              <!-- Programming Languages -->
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                <h3>Programming Languages</h3>
+                <p>Multiple programming languages</p>
+                <div class="tech-tags">
+                  <span>Python</span>
+                  <span>C++</span>
+                  <span>JavaScript</span>
+                  <span>Java</span>
+                </div>
+              </div>
 
-<div class="hero-text">
+              <!-- Problem Solving -->
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                <h3>Problem Solving</h3>
+                <p>Algorithms, competitive programming & challenges</p>
+                <div class="tech-tags">
+                  <a
+                    href="https://leetcode.com/u/elenitadese/"
+                    target="_blank"
+                    class="tech-link"
+                    >LeetCode <i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://codeforces.com/profile/elenitadese"
+                    target="_blank"
+                    class="tech-link"
+                    >Codeforces <i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
 
-<h3>Hello, I'm</h3>
+              <!-- Version Control -->
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                <h3>Version Control</h3>
+                <p>Managing projects with Git & GitHub</p>
+                <div class="tech-tags">
+                  <span>Git</span>
+                  <span>GitHub</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-<h1>Eleni <span>Tadese</span></h1>
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects section">
+          <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+              <!-- Project 1 -->
+              <div class="project-card">
+                <div class="project-img">
+                  <img src="assets/images/project1.jpg" alt="GPA Calculator" />
+                </div>
+                <div class="project-info">
+                  <h3>GPA Calculator Platform</h3>
+                  <p>React, Node.js, CSS</p>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-primary" target="_blank"
+                      >Live Demo</a
+                    >
+                    <a href="#" class="btn btn-outline" target="_blank">Code</a>
+                  </div>
+                </div>
+              </div>
 
-<h2>Junior MERN Stack Developer</h2>
+              <!-- Project 2 -->
+              <div class="project-card">
+                <div class="project-img">
+                  <img
+                    src="assets/images/project2.jpg"
+                    alt="Empowerment Initiative"
+                  />
+                </div>
+                <div class="project-info">
+                  <h3>Student Empowerment Initiative</h3>
+                  <p>HTML, CSS, JavaScript</p>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-primary" target="_blank"
+                      >Live Demo</a
+                    >
+                    <a href="#" class="btn btn-outline" target="_blank">Code</a>
+                  </div>
+                </div>
+              </div>
 
-<div class="hero-buttons">
-<a href="#projects" class="btn primary">View Work</a>
-<a href="#contact" class="btn secondary">Contact</a>
-</div>
+              <!-- Project 3 -->
+              <div class="project-card">
+                <div class="project-img">
+                  <img src="assets/images/project3.jpg" alt="Portfolio" />
+                </div>
+                <div class="project-info">
+                  <h3>Personal Portfolio</h3>
+                  <p>React, Vite, CSS Modules</p>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-primary" target="_blank"
+                      >Live Demo</a
+                    >
+                    <a href="#" class="btn btn-outline" target="_blank">Code</a>
+                  </div>
+                </div>
+              </div>
 
-</div>
+              <!-- Project 4 -->
+              <div class="project-card">
+                <div class="project-img">
+                  <img src="assets/images/project4.jpg" alt="Task Management" />
+                </div>
+                <div class="project-info">
+                  <h3>Task Management App</h3>
+                  <p>MERN Stack</p>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-primary" target="_blank"
+                      >Live Demo</a
+                    >
+                    <a href="#" class="btn btn-outline" target="_blank">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-<div class="hero-image">
-<img src="images/myp.jpg" alt="Eleni">
-</div>
+            <!-- GitHub CTA -->
+            <div class="github-cta">
+              <i class="fab fa-github github-icon"></i>
+              <h3>Want to see more projects?</h3>
+              <p>
+                Explore all my work, contributions, and coding journey on GitHub
+              </p>
+              <a
+                href="https://github.com/Elenitadese"
+                target="_blank"
+                class="btn btn-primary"
+                >Visit My GitHub →</a
+              >
+            </div>
+          </div>
+        </section>
 
-</div>
+        <!-- PROCESS SECTION -->
+        <section id="process" class="process section">
+          <div class="container">
+            <h2 class="section-title">My Process</h2>
+            <p class="section-subtitle">
+              A structured approach to delivering high-quality solutions
+            </p>
 
+            <div class="process-grid">
+              <div class="process-card">
+                <div class="process-icon"><i class="fas fa-search"></i></div>
+                <h3>Research & Planning</h3>
+                <p>
+                  Understanding the problem, gathering requirements, and
+                  planning the best approach.
+                </p>
+              </div>
+              <div class="process-card">
+                <div class="process-icon">
+                  <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>Design & Prototyping</h3>
+                <p>
+                  Creating wireframes, mockups, and prototypes to visualize
+                  solutions.
+                </p>
+              </div>
+              <div class="process-card">
+                <div class="process-icon"><i class="fas fa-code"></i></div>
+                <h3>Development</h3>
+                <p>
+                  Building and testing the solution using modern technologies
+                  and best practices.
+                </p>
+              </div>
+              <div class="process-card">
+                <div class="process-icon"><i class="fas fa-bug"></i></div>
+                <h3>Testing & Quality</h3>
+                <p>
+                  Rigorous testing to ensure the solution works perfectly across
+                  all scenarios.
+                </p>
+              </div>
+              <div class="process-card">
+                <div class="process-icon"><i class="fas fa-rocket"></i></div>
+                <h3>Deployment</h3>
+                <p>
+                  Launching the project and ensuring everything runs smoothly in
+                  production.
+                </p>
+              </div>
+              <div class="process-card">
+                <div class="process-icon"><i class="fas fa-heart"></i></div>
+                <h3>Support & Maintenance</h3>
+                <p>
+                  Providing ongoing support and updates to keep the project
+                  running optimally.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-</div>
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact section">
+          <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+              <!-- Left: Info -->
+              <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p>
+                  I'm always interested in new opportunities and collaborations.
+                </p>
+                <div class="contact-details">
+                  <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                      <h4>Email</h4>
+                      <p>elenitade1221@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                      <h4>Phone</h4>
+                      <p>+251 910 278 021</p>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                      <h4>Location</h4>
+                      <p>Adama, Ethiopia</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-,</section>
-
-<!-- ABOUT -->
-<section id="about" class="about">
-
-<div class="about-container">
-
-<h2 class="section-title">About Me</h2>
-
-<div class="about-grid">
-
-<div class="about-text">
-
-<h3>Passionate about building meaningful technology</h3>
-
-<p>
-I’m a Computer Science and Engineering student at Adama Science and Technology University. I enjoy building web applications and solving real-world problems through software.
-</p>
-
-<p>
-Currently I focus on full-stack development using modern technologies while improving my problem solving and algorithmic thinking.
-</p>
-
-</div>
-
-<div class="about-stats">
-
-<div class="stat-card">
-<h3>4+</h3>
-<p>Projects</p>
-</div>
-
-<div class="stat-card">
-<h3>8+</h3>
-<p>Technologies</p>
-</div>
-
-<div class="stat-card">
-<h3>1+</h3>
-<p>Year Experience</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="skills">
-
-<h2 class="section-title">Skills</h2>
-
-<div class="skills-grid">
-
-<div class="skill-card">
-<h3>Frontend</h3>
-<p>HTML CSS JavaScript React</p>
-</div>
-
-<div class="skill-card">
-<h3>Backend</h3>
-<p>Node.js Express MySQL</p>
-</div>
-
-<div class="skill-card">
-<h3>Programming</h3>
-<p>Python C++ JavaScript</p>
-</div>
-
-<div class="skill-card">
-<h3>Problem Solving</h3>
-<p>
-<a href="#">LeetCode</a>
-<a href="#">Codeforces</a>
-</p>
-</div>
-
-</div>
-
-</section>
-
+              <!-- Right: Form (mailto) -->
+              <form
+                class="contact-form"
+                action="mailto:elenitade1221@gmail.com"
+                method="POST"
+                enctype="text/plain"
+              >
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
 <!-- FOOTER -->
-<footer>
-
-<p>© 2026 Eleni Tadese</p>
-
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-text">
+      <p>© 2025 Eleni Tadese. All rights reserved.</p>
+      <p class="tagline">Building the future, one line of code at a time</p>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/Elenitadese" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:elenitade1221@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/et0021/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Made with ❤️ by Eleni Tadese</p>
+  </div>
 </footer>
-
-</body>
+      <!-- Footer will go here -->
+    </div>
+  </body>
 </html>
